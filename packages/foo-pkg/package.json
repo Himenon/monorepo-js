@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "yarn run watch",
-    "watch": "tsc -p tsconfig.build.json --watch",
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "yarn run build -- --watch",
     "test": "jest -c ./jest.config.json"
   },
   "license": "MIT",

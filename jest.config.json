@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "projects": [
+    "packages/*"
+  ],
+  "testRegex": "/(.*-(test|spec))\\.(ts|tsx)$",
+  "testPathIgnorePatterns": ["/lib/", "/node_modules/"]
+}
