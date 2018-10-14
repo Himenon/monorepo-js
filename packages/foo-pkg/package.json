@@ -1,0 +1,7 @@
+{
+  "name": "foo-pkg",
+  "version": "1.0.0",
+  "description": "package in monorepo",
+  "main": "index.js",
+  "license": "MIT"
+}

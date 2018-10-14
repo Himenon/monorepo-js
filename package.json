@@ -1,0 +1,11 @@
+{
+  "name": "monorepo-js",
+  "version": "1.0.0",
+  "description": "Practice of lerna.",
+  "main": "index.js",
+  "author": "Himenon <k.himeno314@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
+}
