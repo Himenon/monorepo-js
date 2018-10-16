@@ -9,7 +9,9 @@
       "ignoreChanges": ["CHANGELOG.md"]
     }
   },
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "loglevel": "success",
   "version": "fixed",
   "npmClient": "yarn",

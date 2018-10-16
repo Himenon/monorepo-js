@@ -2,15 +2,24 @@
   "name": "monorepo-js",
   "version": "1.0.0",
   "description": "Practice of lerna.",
-  "main": "index.js",
+  "main": "lib/foo.js",
+  "types": "lib/foo.d.ts",
   "author": "Himenon <k.himeno314@gmail.com>",
   "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "test": "yarn run build && jest -c jest.config.json",
-    "build": "lerna run build"
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "version_up:major": "lerna publish --skip-npm --conventional-commits --cd-version major",
+    "version_up:minor": "lerna publish --skip-npm --conventional-commits --cd-version minor",
+    "version_up:patch": "lerna publish --skip-npm --conventional-commits --cd-version patch"
   },
   "private": true,
+  "engines": {
+    "node": ">=9.8.0",
+    "yarn": ">=1.3.2"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.5",
     "jest": "^23.6.0",
@@ -19,6 +28,7 @@
     "typescript": "^3.1.3"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/@utils/*"
   ]
 }
