@@ -1,8 +1,8 @@
 {
-  "name": "bar-pkg",
+  "name": "@utils/foo-pkg",
   "version": "1.0.0",
   "description": "package in monorepo",
-  "main": "lib/bar.ts",
+  "main": "lib/foo.ts",
   "files": [
     "lib/",
     "src/"
@@ -15,9 +15,13 @@
     "start": "yarn run watch",
     "build": "tsc -p tsconfig.build.json",
     "watch": "yarn run build -- --watch",
-    "test": "jest -c ./jest.config.json"
+    "test": "jest -c ./jest.config.json",
+    "clean": "rimraf lib"
   },
   "license": "MIT",
+  "dependencies": {
+    "bar-pkg": "1.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.5",
     "@types/node": "^10.11.7",
