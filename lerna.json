@@ -10,8 +10,7 @@
     }
   },
   "packages": [
-    "packages/*",
-    "packages/@utils/*"
+    "packages/*"
   ],
   "loglevel": "success",
   "version": "fixed",
